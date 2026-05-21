@@ -19,6 +19,15 @@
     color: #727272;
 }
 
+.btn-primary{
+    background-color: #FF900E;
+    color:white;
+    padding: 20px 25 px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
+}
+
 
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
@@ -28,8 +37,13 @@
 .navbar{
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
 .nav-links{
     text-decoration: none;
     font-weight: 500;
@@ -46,3 +60,37 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+/* banner related styles */
+.banner-content{
+    max: width 850px;
+    margin: 0 auto; /*মানে উপরে নিছে ০ হবে । আর দুইপাসে সমান ভাবে। */
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.banner-tite{
+    font-weight: 700;
+    font-size: 4 rem;
+}
+
+.banner-image{
+    width:100%;
+}
+
+/* 
+
+1. breakpoint(usually 3 breakpoint)
+2. media query
+3. style
+4. layout,image, navbar,font
+5. test
+ */
+
+
+
+ /* responsive media query */
+ @media screen and (max-width:576px) {
+    .navbar, .nav-links{
+        flex-direction:   column;
+    }
+ }
